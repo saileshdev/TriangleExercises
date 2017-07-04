@@ -19,17 +19,22 @@ public class DrawAsterisksTest {
 
     @Test
     public void shouldReturnSingleAsterisk(){
-        assertEquals(drawAsterisks.drawAsterisks(1),"*");
+        assertEquals(drawAsterisks.drawHorizontalAsterisks(1),"*");
     }
 
     @Test
     public void shouldPrintSixAsterisksInOneLine(){
-        assertEquals(drawAsterisks.drawAsterisks(6), "******");
+        assertEquals(drawAsterisks.drawHorizontalAsterisks(6), "******");
     }
 
     @Test
     public void shouldPrintEmptyLine(){
-        assertEquals(drawAsterisks.drawAsterisks(0),"");
+        assertEquals(drawAsterisks.drawHorizontalAsterisks(0),"");
+    }
+
+    @Test
+    public void shouldDrawVerticalLine(){
+        assertEquals("*\n*\n",drawAsterisks.drawVerticalAsterisks(2,"\n"));
     }
 
 }
