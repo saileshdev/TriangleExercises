@@ -11,7 +11,7 @@ public class DrawAsterisks {
         this.asterisk = asterisk;
     }
 
-    public String drawAsterisks(int value){
+    public String drawHorizontalAsterisks(int value){
         String asterisksStrings = "";
 
         for (int i = 0; i < value; i++){
@@ -19,5 +19,14 @@ public class DrawAsterisks {
         }
 
         return asterisksStrings;
+    }
+
+    public String drawVerticalAsterisks(int numberOfAsterisks, String separator) {
+        String line = "";
+        for (int i = 0; i < numberOfAsterisks; i++) {
+            line += "*"+ separator;
+        }
+        System.out.print(line);
+        return line;
     }
 }
