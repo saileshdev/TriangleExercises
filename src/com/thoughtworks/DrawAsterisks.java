@@ -26,7 +26,6 @@ public class DrawAsterisks {
         for (int i = 0; i < numberOfAsterisks; i++) {
             line += "*"+ separator;
         }
-        System.out.print(line);
         return line;
     }
 }

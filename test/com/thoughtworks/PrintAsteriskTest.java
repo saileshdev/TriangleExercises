@@ -49,7 +49,7 @@ public class PrintAsteriskTest {
         System.setOut(new PrintStream(outputStream));
         String expected = "*\n*\n";
 
-        printer.printVericalLine(2);
+        printer.printVerticalLine(2);
         assertEquals(outputStream.toString(), expected);
 
     }

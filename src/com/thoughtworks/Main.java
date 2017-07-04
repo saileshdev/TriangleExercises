@@ -11,5 +11,8 @@ public class Main {
         System.out.println();
 
         printer.printHorizontalLine(6);
+
+        System.out.println();
+        printer.printVerticalLine(2);
     }
 }
