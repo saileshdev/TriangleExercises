@@ -13,7 +13,7 @@ public class DrawAsterisksTest {
 
     @Before
     public void setUp() throws Exception {
-        this.drawAsterisks = new DrawAsterisks();
+        this.drawAsterisks = new DrawAsterisks("*");
 
     }
 

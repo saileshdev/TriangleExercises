@@ -6,6 +6,6 @@ package com.thoughtworks;
 public class PrintAsterisk {
 
     public void printSingleAsterisk(){
-        System.out.print(new DrawAsterisks().drawAsterisks(1));
+        System.out.print(new DrawAsterisks("*").drawAsterisks(1));
     }
 }
