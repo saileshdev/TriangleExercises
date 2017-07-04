@@ -16,4 +16,12 @@ public class PrintAsterisk {
     public void printVerticalLine(int numberOfAsterisks){
         System.out.print(new DrawAsterisks("*").drawVerticalAsterisks(numberOfAsterisks,"\n"));
     }
+
+    public void printRightTriangle(int numberOfAsterisks){
+
+        for (int i = 1; i <= numberOfAsterisks; i++) {
+            printHorizontalLine(i);
+            System.out.print("\n");
+        }
+    }
 }
