@@ -54,5 +54,16 @@ public class PrintAsteriskTest {
 
     }
 
+    @Test
+    public void shouldPrintRightTriangleInConsole(){
+
+        System.setOut(new PrintStream(outputStream));
+        String expected = "*\n**\n***\n";
+
+        printer.printRightTriangle(3);
+        assertEquals(outputStream.toString(), expected);
+
+    }
+
 
 }
