@@ -8,5 +8,8 @@ public class Main {
 
         PrintAsterisk printer = new PrintAsterisk();
         printer.printSingleAsterisk();
+        System.out.println();
+
+        printer.printHorizontalLine(6);
     }
 }
