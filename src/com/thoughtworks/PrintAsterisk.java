@@ -6,10 +6,11 @@ package com.thoughtworks;
 public class PrintAsterisk {
 
     public void printSingleAsterisk(){
-        System.out.print(new DrawAsterisks("*").drawAsterisks(1));
+        System.out.print(new DrawAsterisks("*").drawHorizontalAsterisks(1));
     }
 
     public void printHorizontalLine(int numberOfAsterisks){
-        System.out.print(new DrawAsterisks("*").drawAsterisks(numberOfAsterisks));
+        System.out.print(new DrawAsterisks("*").drawHorizontalAsterisks(numberOfAsterisks));
     }
+
 }

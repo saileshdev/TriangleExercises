@@ -42,4 +42,17 @@ public class PrintAsteriskTest {
         assertEquals(outputStream.toString(), expected);
 
     }
+
+    @Test
+    public void shouldPrintVerticalAsterisksInConsole(){
+
+        System.setOut(new PrintStream(outputStream));
+        String expected = "*\n*\n";
+
+        printer.printVericalLine(2);
+        assertEquals(outputStream.toString(), expected);
+
+    }
+
+
 }
