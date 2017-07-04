@@ -22,4 +22,14 @@ public class DrawAsterisksTest {
         assertEquals(drawAsterisks.drawAsterisks(1),"*");
     }
 
+    @Test
+    public void shouldPrintSixAsterisksInOneLine(){
+        assertEquals(drawAsterisks.drawAsterisks(6), "******");
+    }
+
+    @Test
+    public void shouldPrintEmptyLine(){
+        assertEquals(drawAsterisks.drawAsterisks(0),"");
+    }
+
 }
