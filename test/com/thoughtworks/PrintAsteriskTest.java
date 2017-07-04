@@ -31,4 +31,15 @@ public class PrintAsteriskTest {
         assertEquals(outputStream.toString(), expected);
 
     }
+
+    @Test
+    public void shouldPrintSixAsterisksInConsole(){
+
+        System.setOut(new PrintStream(outputStream));
+        String expected = "******";
+
+        printer.printHorizontalLine(6);
+        assertEquals(outputStream.toString(), expected);
+
+    }
 }
